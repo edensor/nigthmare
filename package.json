@@ -10,9 +10,16 @@
     "type": "git",
     "url": "git+https://github.com/edensor/nigthmare.git"
   },
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  },
   "keywords": [
     "unity"
   ],
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server ./app -a localhost -p 8000 -c-1",
+  },
   "author": "martella.marco",
   "license": "ISC",
   "bugs": {
